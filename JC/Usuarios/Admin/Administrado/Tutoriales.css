@@ -1,0 +1,107 @@
+.tutoriales-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px 0;
+}
+
+.tutoriales-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.tutoriales-title {
+  color: #1565c0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tutoriales-table-container {
+  background: #1565c0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.tutoriales-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tutoriales-table th, .tutoriales-table td {
+  padding: 14px 12px;
+  text-align: left;
+}
+
+.tutoriales-table th {
+  background: #1565c0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-bottom: 2px solid #0d47a1;
+}
+
+.tutoriales-table td {
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tutoriales-table tr:last-child td {
+  border-bottom: none;
+}
+
+.delete-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+.volver-btn {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-right: 10px;
+}
+
+.volver-btn:hover {
+  background: #0d47a1;
+}
+
+.agregar-btn {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 10px;
+}
+
+.agregar-btn:hover {
+  background: #0d47a1;
+}

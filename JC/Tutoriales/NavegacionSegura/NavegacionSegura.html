@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial | Navegación segura</title>
+  <link rel="stylesheet" href="../CssTutoriales.css">
+</head>
+<body>
+  <!-- Navegación superior -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="../../Imagenes/Logo.png" alt="CompuFácil Logo" class="logo">
+      <span class="brand-name">CompuFácil</span>
+    </div>
+    <div class="user-icon">
+      <img src="../../Imagenes/USer.png" alt="Usuario" id="userMenuBtn">
+      <div class="user-dropdown" id="userDropdown">
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Crear cuenta</a>
+      </div>
+    </div>
+    <script>
+      const userMenuBtn = document.getElementById('userMenuBtn');
+      const userDropdown = document.getElementById('userDropdown');
+      document.addEventListener('click', function(e) {
+        if (userMenuBtn && userDropdown) {
+          if (userMenuBtn.contains(e.target)) {
+            userDropdown.style.display = userDropdown.style.display === 'block' ? 'none' : 'block';
+          } else {
+            userDropdown.style.display = 'none';
+          }
+        }
+      });
+    </script>
+  </header>
+
+  <!-- Contenido principal del tutorial -->
+  <main class="tutorial-main">
+    <div class="tutorial-header">
+      <img src="Logo.png" alt="Imagen Tutorial" class="tutorial-img">
+      <h1 class="tutorial-name">Navegación segura en Internet</h1>
+      <p class="tutorial-desc">Cómo evitar fraudes, virus y páginas engañosas</p>
+    </div>
+    <section class="tutorial-content">
+      <h2>Paso 1: Verifica la dirección web</h2>
+      <p>Asegúrate de que la página empiece con <b>https://</b> y revisa que la dirección sea la correcta.</p>
+      <h2>Paso 2: No compartas información personal</h2>
+      <p>No escribas datos personales o contraseñas en sitios que no conozcas o que no sean de confianza.</p>
+      <h2>Paso 3: Cuidado con los correos y mensajes sospechosos</h2>
+      <p>No hagas clic en enlaces de correos o mensajes que no esperabas o que parecen extraños.</p>
+      <h2>Paso 4: Usa un antivirus actualizado</h2>
+      <p>Mantén tu antivirus activo y actualizado para protegerte de virus y amenazas.</p>
+    </section>
+    <div style="text-align:center; margin-top:30px;">
+      <a href="../../index.html" class="tutorial-btn">Volver al inicio</a>
+    </div>
+  </main>
+</body>
+</html>

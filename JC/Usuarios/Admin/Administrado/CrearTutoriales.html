@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Tutorial | CompuFácil</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="CrearTutoriales.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="../../../index.html">
+        <img src="../../../Imagenes/Logo.png" alt="CompuFácil Logo" class="logo">
+      </a>
+      <span class="brand-name">CompuFácil</span>
+    </div>
+    <div class="user-icon">
+      <button class="volver-btn" onclick="window.history.back()">Volver</button>
+    </div>
+  </header>
+  <main class="crear-tutorial-container">
+    <h1 class="crear-tutorial-title">Crear nuevo tutorial</h1>
+    <form class="crear-tutorial-form">
+      <label for="titulo">Título del tutorial</label>
+      <input type="text" id="titulo" name="titulo" required>
+
+      <label for="categoria">Categoría</label>
+      <select id="categoria" name="categoria" required>
+        <option value="">Selecciona una categoría</option>
+        <option value="Hardware">Hardware</option>
+        <option value="Archivos">Archivos</option>
+        <option value="Internet">Internet</option>
+        <option value="Ofimática">Ofimática</option>
+      </select>
+
+      <label for="imagen">Imagen principal</label>
+      <input type="file" id="imagen" name="imagen" accept="image/*">
+
+      <label for="contenido">Contenido del tutorial</label>
+      <div class="editor-toolbar">
+        <button type="button" onclick="format('bold')" title="Negrita"><b>B</b></button>
+        <button type="button" onclick="format('italic')" title="Cursiva"><i>I</i></button>
+        <button type="button" onclick="format('underline')" title="Subrayado"><u>U</u></button>
+        <button type="button" onclick="format('insertUnorderedList')" title="Lista">&#8226; Lista</button>
+        <button type="button" onclick="format('insertOrderedList')" title="Lista numerada">1. Lista</button>
+        <select onchange="format('formatBlock', this.value)">
+          <option value="">Texto</option>
+          <option value="h2">Título 2</option>
+          <option value="h3">Título 3</option>
+          <option value="p">Párrafo</option>
+        </select>
+        <input type="color" title="Color de texto" onchange="format('foreColor', this.value)">
+      </div>
+      <div id="contenido" class="editor" contenteditable="true" required></div>
+
+      <button type="submit" class="crear-btn">Publicar tutorial</button>
+    </form>
+  </main>
+  <script>
+    function format(command, value = null) {
+      document.execCommand(command, false, value);
+    }
+    // Opcional: Validación simple para evitar publicar sin texto
+    document.querySelector('.crear-tutorial-form').addEventListener('submit', function(e) {
+      const contenido = document.getElementById('contenido').innerHTML.trim();
+      if (!contenido || contenido === '<br>') {
+        alert('Por favor, escribe el contenido del tutorial.');
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1565c0;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.5rem;
+  min-height: 72px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+}
+
+.user-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.user-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.user-icon img:hover {
+  transform: scale(1.18) rotate(-8deg);
+  box-shadow: 0 2px 12px rgba(21,101,192,0.25);
+}
+
+.user-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: transparent;
+  min-width: 140px;
+  box-shadow: none;
+  border-radius: 6px;
+  z-index: 100;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.user-dropdown a {
+  color: #fff;
+  background: #1565c0;
+  padding: 8px 0;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  width: 100%;
+  min-width: 120px;
+  margin: 3px 0;
+  text-align: center;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-sizing: border-box;
+  border: none;
+}
+
+.user-dropdown a:hover {
+  background: #0d47a1;
+  color: #fff;
+}
+
+.tutorial-main {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+.tutorial-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.tutorial-img {
+  display: block;
+  margin: 0 auto 18px auto;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.tutorial-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1565c0;
+  margin: 10px 0 6px 0;
+  letter-spacing: 0.5px;
+}
+
+.tutorial-desc {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.tutorial-content h2 {
+  color: #1565c0;
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.tutorial-content p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.tutorial-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #1565c0;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.tutorial-btn:hover {
+  background: #0d47a1;
+}

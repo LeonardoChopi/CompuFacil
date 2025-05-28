@@ -1,0 +1,71 @@
+.admin-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px 0;
+}
+.admin-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.admin-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 28px 24px 24px 24px;
+  max-width: 340px;
+  min-width: 260px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.admin-card:hover {
+  box-shadow: 0 4px 16px rgba(21,101,192,0.18);
+}
+.admin-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;      /* Cambia de 50% a 12px para quitar el círculo */
+  margin-bottom: 18px;
+  border: none;             /* Quita el borde azul */
+  background: #e3eafc;
+}
+.admin-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+.admin-desc {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+.admin-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #1565c0;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: background 0.2s;
+  border: none;
+}
+.admin-btn:hover {
+  background: #0d47a1;
+}
+.cerrar-sesion-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  transition: none;
+}
+
+.cerrar-sesion-img:hover {
+  background: none;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial | CompuFácil</title>
+  <link rel="stylesheet" href="../CssTutoriales.css">
+</head>
+<body>
+  <!-- Navegación superior -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="../../Imagenes/Logo.png" alt="CompuFácil Logo" class="logo">
+      <span class="brand-name">CompuFácil</span>
+    </div>
+    <div class="user-icon">
+      <img src="../../Imagenes/USer.png" alt="Usuario" id="userMenuBtn">
+      <div class="user-dropdown" id="userDropdown">
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Crear cuenta</a>
+      </div>
+    </div>
+    <script>
+      const userMenuBtn = document.getElementById('userMenuBtn');
+      const userDropdown = document.getElementById('userDropdown');
+      document.addEventListener('click', function(e) {
+        if (userMenuBtn && userDropdown) {
+          if (userMenuBtn.contains(e.target)) {
+            userDropdown.style.display = userDropdown.style.display === 'block' ? 'none' : 'block';
+          } else {
+            userDropdown.style.display = 'none';
+          }
+        }
+      });
+    </script>
+  </header>
+
+  <!-- Contenido principal del tutorial -->
+  <main class="tutorial-main">
+    <div class="tutorial-header">
+      <img src="Logo.png" alt="Imagen Tutorial" class="tutorial-img">
+      <h1 class="tutorial-name">Como conectar los cables de PC</h1>
+      <p class="tutorial-desc">Aprende paso a paso cómo conectar correctamente los cables de tu computadora de escritorio.</p>
+    </div>
+    <section class="tutorial-content">
+      <h2>Paso 1: Identifica los cables</h2>
+      <p>Observa los cables que vienen con tu computadora: alimentación, monitor, teclado, mouse, etc.</p>
+      <h2>Paso 2: Conecta el cable de alimentación</h2>
+      <p>Ubica el cable de corriente y conéctalo desde la fuente de poder de la PC a la toma eléctrica.</p>
+      <h2>Paso 3: Conecta los periféricos</h2>
+      <p>Conecta el monitor, teclado y mouse en los puertos correspondientes de la parte trasera de la PC.</p>
+      <h2>Paso 4: Verifica las conexiones</h2>
+      <p>Asegúrate de que todos los cables estén bien conectados antes de encender la computadora.</p>
+    </section>
+    <div style="text-align:center; margin-top:30px;">
+      <a href="../../index.html" class="tutorial-btn">Volver al inicio</a>
+    </div>
+  </main>
+</body>
+</html>

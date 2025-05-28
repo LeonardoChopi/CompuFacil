@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Usuarios | CompuFácil</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="Usuarios.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="../../../index.html">
+        <img src="../../../Imagenes/Logo.png" alt="CompuFácil Logo" class="logo">
+      </a>
+      <span class="brand-name">CompuFácil</span>
+    </div>
+    <div class="user-icon">
+      <button class="volver-btn" onclick="window.history.back()">Volver</button>
+    </div>
+  </header>
+  <main class="usuarios-container">
+    <h1 class="usuarios-title">Lista de usuarios</h1>
+    <div class="usuarios-table-container">
+      <table class="usuarios-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Fecha de creación</th>
+            <th>Suscrito</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Pérez</td>
+            <td>2024-05-01</td>
+            <td>Sí</td>
+            <td><button class="delete-btn">Borrar</button></td>
+          </tr>
+          <tr>
+            <td>María López</td>
+            <td>2024-05-10</td>
+            <td>No</td>
+            <td><button class="delete-btn">Borrar</button></td>
+          </tr>
+          <tr>
+            <td>Carlos Ruiz</td>
+            <td>2024-05-15</td>
+            <td>Sí</td>
+            <td><button class="delete-btn">Borrar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

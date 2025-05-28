@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial | Organiza tu PC</title>
+  <link rel="stylesheet" href="../CssTutoriales.css">
+</head>
+<body>
+  <!-- Navegación superior -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="../../Imagenes/Logo.png" alt="CompuFácil Logo" class="logo">
+      <span class="brand-name">CompuFácil</span>
+    </div>
+    <div class="user-icon">
+      <img src="../../Imagenes/USer.png" alt="Usuario" id="userMenuBtn">
+      <div class="user-dropdown" id="userDropdown">
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Crear cuenta</a>
+      </div>
+    </div>
+    <script>
+      const userMenuBtn = document.getElementById('userMenuBtn');
+      const userDropdown = document.getElementById('userDropdown');
+      document.addEventListener('click', function(e) {
+        if (userMenuBtn && userDropdown) {
+          if (userMenuBtn.contains(e.target)) {
+            userDropdown.style.display = userDropdown.style.display === 'block' ? 'none' : 'block';
+          } else {
+            userDropdown.style.display = 'none';
+          }
+        }
+      });
+    </script>
+  </header>
+
+  <!-- Contenido principal del tutorial -->
+  <main class="tutorial-main">
+    <div class="tutorial-header">
+      <img src="Logo.jpg" alt="Imagen Tutorial" class="tutorial-img">
+      <h1 class="tutorial-name">Cómo organizar tu computadora</h1>
+      <p class="tutorial-desc">Carpetas, archivos y copias de seguridad</p>
+    </div>
+    <section class="tutorial-content">
+      <h2>Paso 1: Crea carpetas principales</h2>
+      <p>En tu escritorio o en "Documentos", crea carpetas para separar tus archivos por tipo: <b>Escuela</b>, <b>Trabajo</b>, <b>Fotos</b>, <b>Programas</b>, etc.</p>
+      <h2>Paso 2: Nombra tus archivos correctamente</h2>
+      <p>Usa nombres claros y fechas, por ejemplo: <i>tarea_matematicas_mayo2025.docx</i> o <i>foto_vacaciones_2024.jpg</i>.</p>
+      <h2>Paso 3: Haz limpieza regularmente</h2>
+      <p>Elimina archivos que ya no necesitas y vacía la papelera de reciclaje cada semana.</p>
+      <h2>Paso 4: Haz copias de seguridad</h2>
+      <p>Guarda tus archivos importantes en una memoria USB, disco externo o en la nube (Google Drive, OneDrive, etc.).</p>
+    </section>
+    <div style="text-align:center; margin-top:30px;">
+      <a href="../../index.html" class="tutorial-btn">Volver al inicio</a>
+    </div>
+  </main>
+</body>
+</html>

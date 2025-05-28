@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tutoriales | CompuFácil</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="Tutoriales.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="../../../style.css">
+        <img src="../../../Imagenes/Logo.png" alt="CompuFácil Logo" class="logo">
+      </a>
+      <span class="brand-name">CompuFácil</span>
+    </div>
+    <div class="user-icon">
+      <button class="volver-btn" onclick="window.history.back()">Volver</button>
+    </div>
+  </header>
+  <main class="tutoriales-container">
+    <div class="tutoriales-header-row">
+      <h1 class="tutoriales-title">Lista de tutoriales</h1>
+      <button class="agregar-btn" onclick="window.location.href='CrearTutoriales.html'">Agregar tutorial</button>
+    </div>
+    <div class="tutoriales-table-container">
+      <table class="tutoriales-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Fecha de creación</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Como conectar los cables de PC</td>
+            <td>2024-05-01</td>
+            <td>Hardware</td>
+            <td><button class="delete-btn">Borrar</button></td>
+          </tr>
+          <tr>
+            <td>Cómo organizar tu computadora</td>
+            <td>2024-05-10</td>
+            <td>Archivos</td>
+            <td><button class="delete-btn">Borrar</button></td>
+          </tr>
+          <tr>
+            <td>Navegación segura en Internet</td>
+            <td>2024-05-15</td>
+            <td>Internet</td>
+            <td><button class="delete-btn">Borrar</button></td>
+          </tr>
+          <tr>
+            <td>Trucos básicos de Word y Google Docs</td>
+            <td>2024-05-20</td>
+            <td>Ofimática</td>
+            <td><button class="delete-btn">Borrar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

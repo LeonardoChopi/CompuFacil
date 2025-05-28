@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial | Trucos básicos de Word y Google Docs</title>
+  <link rel="stylesheet" href="../CssTutoriales.css">
+</head>
+<body>
+  <!-- Navegación superior -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="../../Imagenes/Logo.png" alt="CompuFácil Logo" class="logo">
+      <span class="brand-name">CompuFácil</span>
+    </div>
+    <div class="user-icon">
+      <img src="../../Imagenes/USer.png" alt="Usuario" id="userMenuBtn">
+      <div class="user-dropdown" id="userDropdown">
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Crear cuenta</a>
+      </div>
+    </div>
+    <script>
+      const userMenuBtn = document.getElementById('userMenuBtn');
+      const userDropdown = document.getElementById('userDropdown');
+      document.addEventListener('click', function(e) {
+        if (userMenuBtn && userDropdown) {
+          if (userMenuBtn.contains(e.target)) {
+            userDropdown.style.display = userDropdown.style.display === 'block' ? 'none' : 'block';
+          } else {
+            userDropdown.style.display = 'none';
+          }
+        }
+      });
+    </script>
+  </header>
+
+  <!-- Contenido principal del tutorial -->
+  <main class="tutorial-main">
+    <div class="tutorial-header">
+      <img src="Logo.png" alt="Imagen Tutorial" class="tutorial-img">
+      <h1 class="tutorial-name">Trucos básicos de Word y Google Docs</h1>
+      <p class="tutorial-desc">Aprende a crear, guardar y dar formato a tus documentos fácilmente.</p>
+    </div>
+    <section class="tutorial-content">
+      <h2>Paso 1: Crear un documento nuevo</h2>
+      <p>En Word: Haz clic en <b>Archivo &gt; Nuevo</b>. <br>En Google Docs: Haz clic en <b>+ en blanco</b> desde <a href="https://docs.google.com" target="_blank">docs.google.com</a>.</p>
+      <h2>Paso 2: Guardar tu documento</h2>
+      <p>En Word: Haz clic en <b>Archivo &gt; Guardar como</b> y elige la carpeta.<br>En Google Docs: Se guarda automáticamente en tu Google Drive.</p>
+      <h2>Paso 3: Dar formato al texto</h2>
+      <p>Selecciona el texto y usa los botones para <b>negrita</b>, <i>cursiva</i>, <u>subrayado</u> o cambia el tamaño y color de la letra.</p>
+      <h2>Paso 4: Insertar imágenes</h2>
+      <p>En ambos programas, busca el menú <b>Insertar &gt; Imagen</b> para agregar fotos desde tu computadora o internet.</p>
+      <h2>Paso 5: Descargar o compartir</h2>
+      <p>En Word: <b>Archivo &gt; Guardar como</b> para guardar en tu PC.<br>En Google Docs: <b>Archivo &gt; Descargar</b> para guardar como Word o PDF, o usa <b>Compartir</b> para enviar el enlace.</p>
+    </section>
+    <div style="text-align:center; margin-top:30px;">
+      <a href="../../index.html" class="tutorial-btn">Volver al inicio</a>
+    </div>
+  </main>
+</body>
+</html>
