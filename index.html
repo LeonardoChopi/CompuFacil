@@ -1,98 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CompuFácil</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="Tutoriales/ConexionTrasera/ConexionTrasera.html">
+    <meta charset="UTF-8">
+    <title>Dominio Comprado</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .message {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navegación superior -->
-  <header class="navbar">
-    <div class="logo-container">
-      <img src="Imagenes/Logo.png" alt="CompuFácil Logo" class="logo">
-      <span class="brand-name">CompuFácil</span>
+    <div class="message">
+        Dominio comprado por El grupo GEMA para el proyecto integrador
     </div>
-    <div class="user-icon">
-    <img src="Imagenes/USer.png" alt="Usuario" id="userMenuBtn">
-    <div class="user-dropdown" id="userDropdown">
-    <a href="#">Iniciar sesión</a>
-    <a href="#">Crear cuenta</a>
-    </div>
-        <script>
-      const userMenuBtn = document.getElementById('userMenuBtn');
-      const userDropdown = document.getElementById('userDropdown');
-      document.addEventListener('click', function(e) {
-        if (userMenuBtn && userDropdown) {
-          if (userMenuBtn.contains(e.target)) {
-            userDropdown.style.display = userDropdown.style.display === 'block' ? 'none' : 'block';
-          } else {
-            userDropdown.style.display = 'none';
-          }
-        }
-      });
-    </script></div>
-  </header>
-
-  <!-- Contenedor de tutoriales -->
-  <main class="grid-container">
-    <!-- Tarjeta de tutorial (repetir para cada uno) -->
-    <div class="card">
-  <table>
-    <tr><td>
-      <img src="Tutoriales/ConexionTrasera/Logo.png"
-           alt="Imagen Tutorial 1"
-           class="tutorial-img" id="img1">
-    <tr><td class="tutorial-name">
-      Como conectar los cables de PC
-    <tr><td class="tutorial-desc">
-      Aprende paso a paso cómo conectar correctamente los cables de tu computadora de escritorio.
-    <tr><td style="text-align:center">
-      <a href="Tutoriales/ConexionTrasera/ConexionTrasera.html" class="tutorial-btn">Ver tutorial</a>
-  </table>
-</div>
-<div class="card">
-  <table>
-    <tr><td>
-      <img src="Tutoriales/OrganizarCarpeta/Logo.jpg"
-           alt="Imagen Tutorial 1"
-           class="tutorial-img" id="img1">
-    <tr><td class="tutorial-name">
-      Cómo organizar tu computadora
-    <tr><td class="tutorial-desc">
-      Carpetas, archivos y copias de seguridad
-    <tr><td style="text-align:center">
-      <a href="tutorial1.html" class="tutorial-btn">Ver tutorial</a>
-  </table>
-</div>
-<div class="card">
-  <table>
-    <tr><td>
-      <img src="Tutoriales/NavegacionSegura/Logo.png"
-           alt="Imagen Tutorial 1"
-           class="tutorial-img" id="img1">
-    <tr><td class="tutorial-name">
-      Navegación segura en Internet
-    <tr><td class="tutorial-desc">
-      cómo evitar fraudes, virus y páginas engañosas
-    <tr><td style="text-align:center">
-      <a href="tutorial1.html" class="tutorial-btn">Ver tutorial</a>
-  </table>
-</div>
-<div class="card">
-  <table>
-    <tr><td>
-      <img src="Tutoriales/TrucosOffice/Logo.png"
-           alt="Imagen Tutorial 1"
-           class="tutorial-img" id="img1">
-    <tr><td class="tutorial-name">
-      Trucos básicos de Word y Google Docs
-    <tr><td class="tutorial-desc">
-      Crear documentos bonitos y ordenados
-    <tr><td style="text-align:center">
-      <a href="tutorial1.html" class="tutorial-btn">Ver tutorial</a>
-  </table>
-</div>
 </body>
 </html>
